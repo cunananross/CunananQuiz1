@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cunanan.cunananquiz1.ITScreen">
+
+    <TextView
+        android:id="@+id/top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="BACHELOR OF SCIENCE IN INFORMATION TECHNOLOGY (4 years)"
+        android:textColor="#ded719"
+        />
+    <TextView
+        android:id="@+id/intro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:text="Level I accredited by the Philippine Accrediting Association of Schools, Colleges, and Universities"
+        android:textColor="#000000"
+        />
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/intro"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Under this program, the students are trained to be well versed in the practical and technical know-how of installing/setting-up of computers and computer networks. Special skills taught include troubleshooting and repairing of hardware components."
+        android:textColor="#515151"
+        />
+    <Button
+        android:id="@+id/home"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Home"
+        android:onClick="toHome2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/info"
+        android:layout_alignStart="@+id/info" />
+    <Button
+        android:id="@+id/toCS"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="CS Program"
+        android:onClick="toCS2"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/home"
+        android:layout_toEndOf="@+id/home" />
+    <Button
+        android:id="@+id/toIS"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="IS Program"
+        android:onClick="toIS2"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/toCS"
+        android:layout_toEndOf="@+id/toCS" />
+
+</RelativeLayout>

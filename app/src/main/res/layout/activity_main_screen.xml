@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cunanan.cunananquiz1.MainScreen">
+
+    <Button
+        android:id="@+id/CS"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="B.S COMPUTER SCIENCE"
+        android:layout_above="@+id/IT"
+        android:layout_alignLeft="@+id/IT"
+        android:layout_marginBottom="40dp"
+        android:onClick="toCS"
+        />
+    <Button
+        android:id="@+id/IT"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="B.S INFORMATION TECHNOLOGY"
+        android:layout_centerInParent="true"
+        android:onClick="toIT"
+        />
+    <Button
+        android:id="@+id/IS"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="B.S INFORMATION SCIENCE"
+        android:layout_below="@+id/IT"
+        android:layout_alignLeft="@+id/IT"
+        android:layout_marginTop="40dp"
+        android:onClick="toIS"
+        />
+
+
+</RelativeLayout>
